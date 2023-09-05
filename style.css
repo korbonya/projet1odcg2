@@ -52,6 +52,45 @@ header{
     font-size: 1rem;
 }
 
+.sub-menu{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.active{
+    display: block;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        top: -60px;
+    }
+    100% {
+        opacity: 1;
+        top: 60px
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        top: 60px;
+    }
+    100% {
+        opacity: 0;
+        top: -60px
+    }
+}
+
+
 .btn-second{
     background-color: #fff;
     border: 1px solid #7451EB;
